@@ -4,6 +4,22 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Shell.NavBarIsVisible="False">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="20" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontFamily" Value="RalewayBlack" />
+            <Setter Property="HeightRequest" Value="60" />
+            <Setter Property="BackgroundColor" Value="Black" />
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+
+        <Style x:Key="ButtonGoogleLogin" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#F6F6FB" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+    </ContentPage.Resources>
     <VerticalStackLayout Padding="40">
         <Image Source="onboarding.png" />
 
@@ -16,25 +32,11 @@
             VerticalOptions="Center" />
 
         <Button
-            Margin="30"
-            BackgroundColor="#F6F6FB"
-            CornerRadius="20"
-            FontFamily="RalewayBlack"
-            FontSize="18"
-            HeightRequest="60"
             ImageSource="google_logo.png"
-            Text="Continuar com Google"
-            TextColor="Black" />
+            Style="{StaticResource ButtonGoogleLogin}"
+            Text="Continuar com Google" />
 
-        <Button
-            Margin="0,20,0,40"
-            BackgroundColor="Black"
-            CornerRadius="20"
-            FontFamily="RalewayBlack"
-            FontSize="18"
-            HeightRequest="60"
-            Text="Login com Email e Senha"
-            TextColor="White" />
+        <Button Margin="0,20,0,40" Text="Login com Email e Senha" />
 
         <Label
             FontSize="18"
