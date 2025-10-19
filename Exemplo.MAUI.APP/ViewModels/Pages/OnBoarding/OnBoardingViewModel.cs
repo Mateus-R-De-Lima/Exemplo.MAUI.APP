@@ -5,9 +5,9 @@ namespace Exemplo.MAUI.APP.ViewModels.Pages.OnBoarding
     public partial class OnBoardingViewModel
     {
         [RelayCommand]
-        private void LoginWithEmailAndPassword()
+        private async Task LoginWithEmailAndPassword()
         {
-
+            await Shell.Current.GoToAsync("DoLoginPage");
         }
         [RelayCommand]
         private void LoginWithGoogle()

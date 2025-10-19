@@ -1,4 +1,5 @@
 ﻿using Exemplo.MAUI.APP.Constants;
+using Exemplo.MAUI.APP.Views.Pages.Login.DoLogin;
 using Microsoft.Extensions.Logging;
 
 namespace Exemplo.MAUI.APP
@@ -10,6 +11,7 @@ namespace Exemplo.MAUI.APP
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .AddPages()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("Raleway-Black.ttf", FontFamily.MAIN_FONT_BLACK);
@@ -24,6 +26,14 @@ namespace Exemplo.MAUI.APP
 #endif
 
             return builder.Build();
+        }
+
+
+        private static MauiAppBuilder AddPages( this MauiAppBuilder appBuilder)
+        {
+            Routing.RegisterRoute("DoLoginPage", typeof(DoLoginPage));
+
+            return appBuilder;
         }
     }
 }
