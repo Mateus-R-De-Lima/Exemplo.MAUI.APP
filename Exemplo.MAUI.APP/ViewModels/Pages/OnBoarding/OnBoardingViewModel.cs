@@ -1,16 +1,16 @@
-﻿using System.Windows.Input;
+﻿using CommunityToolkit.Mvvm.Input;
 
 namespace Exemplo.MAUI.APP.ViewModels.Pages.OnBoarding
 {
-    public class OnBoardingViewModel
+    public partial class OnBoardingViewModel
     {
-        public ICommand LoginWithEmailAndPasswordCommand { get; set; }
-
-        public OnBoardingViewModel()
-        {
-            LoginWithEmailAndPasswordCommand = new Command(LoginWithEmailAndPassword);
-        }
+        [RelayCommand]
         private void LoginWithEmailAndPassword()
+        {
+
+        }
+        [RelayCommand]
+        private void LoginWithGoogle()
         {
 
         }

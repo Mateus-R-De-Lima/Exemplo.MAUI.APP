@@ -20,6 +20,7 @@
             VerticalOptions="Center" />
 
         <Button
+            Command="{Binding LoginWithGoogleCommand}"
             ImageSource="google_logo.png"
             Style="{StaticResource ButtonGoogleLogin}"
             Text="Continuar com Google" />
