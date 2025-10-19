@@ -4,6 +4,8 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:fontFamily="clr-namespace:Exemplo.MAUI.APP.Constants"
+    xmlns:viewModel="clr-namespace:Exemplo.MAUI.APP.ViewModels.Pages.OnBoarding"
+    x:DataType="viewModel:OnBoardingViewModel"
     Shell.NavBarIsVisible="False">
 
     <VerticalStackLayout>
@@ -22,7 +24,10 @@
             Style="{StaticResource ButtonGoogleLogin}"
             Text="Continuar com Google" />
 
-        <Button Margin="0,20,0,40" Text="Login com Email e Senha" />
+        <Button
+            Margin="0,20,0,40"
+            Command="{Binding LoginWithEmailAndPasswordCommand}"
+            Text="Login com Email e Senha" />
 
         <Label
             FontSize="18"
