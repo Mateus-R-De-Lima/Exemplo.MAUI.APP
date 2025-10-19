@@ -2,8 +2,12 @@
 <ContentPage
     x:Class="Exemplo.MAUI.APP.Views.Pages.Login.User.Register.RegisterAccountPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:Exemplo.MAUI.APP.ViewModels.Pages.Login.User.Register"
+    x:DataType="viewModel:RegisterAccountViewModel">
+
     <VerticalStackLayout>
         <Label Text="Criar minha Conta" />
+        <Button Command="{Binding GoToLoginPageCommand}" Text="Login" />
     </VerticalStackLayout>
 </ContentPage>
