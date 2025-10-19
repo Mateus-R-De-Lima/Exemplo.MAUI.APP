@@ -10,9 +10,31 @@
     <VerticalStackLayout>
         <Label Style="{StaticResource PageTitle}" Text="Criar minha Conta" />
 
-        <Label Margin="0,20,0,0" Text="Comande sua rotina com facilidade—porque você merece mais tempo para o que ama!" />
+        <Label Margin="0,20,0,50" Text="Comande sua rotina com facilidade—porque você merece mais tempo para o que ama!" />
+
+        <Label Style="{StaticResource TitleForEntry}" Text="Name" />
+        <Entry
+            Placeholder="Mateus Lima"
+            PlaceholderColor="#808080"
+            TextColor="Black" />
+
+        <Label Style="{StaticResource TitleForEntry}" Text="E-mail" />
+        <Entry
+            Keyboard="Email"
+            Placeholder="mateus@testes.com.br"
+            PlaceholderColor="#808080"
+            TextColor="Black" />
+
+        <Label Style="{StaticResource TitleForEntry}" Text="Senha" />
+        <Entry
+            IsPassword="True"
+            Placeholder="Mateus Lima"
+            PlaceholderColor="#808080"
+            TextColor="Black" />
+
 
         <Button
+            Margin="0,70,0,70"
             BackgroundColor="#0065f2"
             CornerRadius="20"
             HeightRequest="60"
