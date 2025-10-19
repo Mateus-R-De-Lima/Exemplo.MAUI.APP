@@ -5,26 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Shell.NavBarIsVisible="False">
 
-    <ContentPage.Resources>
-        <Style TargetType="Button">
-            <Setter Property="CornerRadius" Value="20" />
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="FontFamily" Value="RalewayBlack" />
-            <Setter Property="HeightRequest" Value="60" />
-            <Setter Property="BackgroundColor" Value="Black" />
-            <Setter Property="TextColor" Value="White" />
-        </Style>
 
-        <Style x:Key="ButtonGoogleLogin" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#F6F6FB" />
-            <Setter Property="TextColor" Value="Black" />
-        </Style>
-    </ContentPage.Resources>
     <VerticalStackLayout Padding="40">
         <Image Source="onboarding.png" />
 
         <Label
-            Margin="0,30,0,0"
+            Margin="0,30,0,40"
             FontFamily="RalewayBlack"
             FontSize="18"
             HorizontalOptions="Center"
