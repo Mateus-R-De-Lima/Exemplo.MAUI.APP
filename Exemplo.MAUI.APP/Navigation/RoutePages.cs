@@ -1,0 +1,11 @@
+﻿namespace Exemplo.MAUI.APP.Navigation
+{
+    public class RoutePages
+    {
+        public const string ONBOARDING_PAGE = "OnboardingPage";
+
+        public const string LOGIN_PAGE = "DoLoginPage";
+
+        public const string USER_REGISTER_ACCOUNT_PAGE = "RegisterUserAccountPage";
+    }
+}

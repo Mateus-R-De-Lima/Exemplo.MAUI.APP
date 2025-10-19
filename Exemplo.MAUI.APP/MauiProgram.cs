@@ -1,5 +1,7 @@
 ﻿using Exemplo.MAUI.APP.Constants;
+using Exemplo.MAUI.APP.Navigation;
 using Exemplo.MAUI.APP.Views.Pages.Login.DoLogin;
+using Exemplo.MAUI.APP.Views.Pages.Login.User.Register;
 using Microsoft.Extensions.Logging;
 
 namespace Exemplo.MAUI.APP
@@ -31,7 +33,8 @@ namespace Exemplo.MAUI.APP
 
         private static MauiAppBuilder AddPages( this MauiAppBuilder appBuilder)
         {
-            Routing.RegisterRoute("DoLoginPage", typeof(DoLoginPage));
+            Routing.RegisterRoute(RoutePages.LOGIN_PAGE, typeof(DoLoginPage));
+            Routing.RegisterRoute(RoutePages.USER_REGISTER_ACCOUNT_PAGE, typeof(RegisterAccountPage));
 
             return appBuilder;
         }

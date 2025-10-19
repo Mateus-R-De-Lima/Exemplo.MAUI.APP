@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using Exemplo.MAUI.APP.Navigation;
 
 namespace Exemplo.MAUI.APP.ViewModels.Pages.OnBoarding
 {
@@ -7,12 +8,18 @@ namespace Exemplo.MAUI.APP.ViewModels.Pages.OnBoarding
         [RelayCommand]
         private async Task LoginWithEmailAndPassword()
         {
-            await Shell.Current.GoToAsync("DoLoginPage");
+            await Shell.Current.GoToAsync(RoutePages.LOGIN_PAGE);
         }
         [RelayCommand]
         private void LoginWithGoogle()
         {
 
+        }
+
+        [RelayCommand]
+        private async Task RegisterUserAccount()
+        {
+            await Shell.Current.GoToAsync(RoutePages.USER_REGISTER_ACCOUNT_PAGE);
         }
 
     }
