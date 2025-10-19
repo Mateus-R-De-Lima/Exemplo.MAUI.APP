@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Exemplo.MAUI.APP.Constants;
+using Microsoft.Extensions.Logging;
 
 namespace Exemplo.MAUI.APP
 {
@@ -11,11 +12,11 @@ namespace Exemplo.MAUI.APP
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("Raleway-Black.ttf", "RalewayBlack");
-                    fonts.AddFont("Raleway-Regular.ttf", "RalewayRegular");
-                    fonts.AddFont("Raleway-Thin.ttf", "RalewayThin");
-                    fonts.AddFont("WorkSans-Black.ttf", "WorkSansBlack");
-                    fonts.AddFont("WorkSans-Regular.ttf", "WorkSansRegular");
+                    fonts.AddFont("Raleway-Black.ttf", FontFamily.MAIN_FONT_BLACK);
+                    fonts.AddFont("Raleway-Regular.ttf", FontFamily.MAIN_FONT_REGULAR);
+                    fonts.AddFont("Raleway-Thin.ttf", FontFamily.MAIN_FONT_THIN);
+                    fonts.AddFont("WorkSans-Black.ttf", FontFamily.SECONDARY_FONT_BLACK);
+                    fonts.AddFont("WorkSans-Regular.ttf", FontFamily.SECONDARY_FONT_REGULAR);
                 });
 
 #if DEBUG
