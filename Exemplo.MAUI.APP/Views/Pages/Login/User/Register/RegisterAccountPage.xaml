@@ -13,21 +13,15 @@
 
         <Label Margin="0,20,0,50" Text="Comande sua rotina com facilidade—porque você merece mais tempo para o que ama!" />
 
-        <component:EntryAndLabelComponent />
+        <component:EntryAndLabelComponent Title="Name" Placeholder="Mateus Lima" />
 
-        <Label Style="{StaticResource TitleForEntry}" Text="E-mail" />
-        <Entry
+        <component:EntryAndLabelComponent
+            Title="E-mail"
             Keyboard="Email"
-            Placeholder="mateus@testes.com.br"
-            PlaceholderColor="#808080"
-            TextColor="Black" />
+            Placeholder="mateus@testes.com.br" />
 
-        <Label Style="{StaticResource TitleForEntry}" Text="Senha" />
-        <Entry
-            IsPassword="True"
-            Placeholder="Mateus Lima"
-            PlaceholderColor="#808080"
-            TextColor="Black" />
+
+        <component:EntryAndLabelPasswordComponent Title="Senha" Placeholder="123456" />
 
 
         <Button
