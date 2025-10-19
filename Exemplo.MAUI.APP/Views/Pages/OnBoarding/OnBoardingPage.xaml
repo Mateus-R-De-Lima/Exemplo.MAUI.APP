@@ -20,14 +20,19 @@
             VerticalOptions="Center" />
 
         <Button
+            BackgroundColor="#F6F6FB"
             Command="{Binding LoginWithGoogleCommand}"
+            CornerRadius="20"
+            HeightRequest="60"
             ImageSource="google_logo.png"
-            Style="{StaticResource ButtonGoogleLogin}"
-            Text="Continuar com Google" />
+            Text="Continuar com Google"
+            TextColor="Black" />
 
         <Button
             Margin="0,20,0,40"
             Command="{Binding LoginWithEmailAndPasswordCommand}"
+            CornerRadius="20"
+            HeightRequest="60"
             Text="Login com Email e Senha" />
 
         <VerticalStackLayout Padding="0,10,0,0" HeightRequest="40">

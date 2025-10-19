@@ -12,12 +12,20 @@
 
         <Label Margin="0,20,0,0" Text="Comande sua rotina com facilidade—porque você merece mais tempo para o que ama!" />
 
+        <Button
+            BackgroundColor="#0065f2"
+            CornerRadius="20"
+            HeightRequest="60"
+            Text="Criar minha Conta" />
+
         <VerticalStackLayout Padding="0,10,0,0" HeightRequest="40">
             <VerticalStackLayout.GestureRecognizers />
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
+
+
 
                 <Label.FormattedText>
                     <FormattedString>
