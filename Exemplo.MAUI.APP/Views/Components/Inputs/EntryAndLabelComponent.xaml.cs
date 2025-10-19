@@ -24,5 +24,7 @@ public partial class EntryAndLabelComponent : ContentView
     public EntryAndLabelComponent()
     {
         InitializeComponent();
+
+        BindingContext = this;
     }
 }

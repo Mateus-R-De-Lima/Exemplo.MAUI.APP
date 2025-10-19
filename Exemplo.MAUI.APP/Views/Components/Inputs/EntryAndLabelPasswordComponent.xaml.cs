@@ -20,7 +20,9 @@ public partial class EntryAndLabelPasswordComponent : ContentView
     public EntryAndLabelPasswordComponent()
 	{
 		InitializeComponent();
-	}
+
+        BindingContext = this;
+    }
 
     private void ShowHidePassword(object sender, TappedEventArgs e)
     {

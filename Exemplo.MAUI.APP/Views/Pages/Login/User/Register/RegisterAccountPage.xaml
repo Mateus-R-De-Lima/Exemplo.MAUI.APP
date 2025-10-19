@@ -8,10 +8,11 @@
     xmlns:viewModel="clr-namespace:Exemplo.MAUI.APP.ViewModels.Pages.Login.User.Register"
     x:DataType="viewModel:RegisterAccountViewModel">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="30">
+
         <Label Style="{StaticResource PageTitle}" Text="Criar minha Conta" />
 
-        <Label Margin="0,20,0,50" Text="Comande sua rotina com facilidade—porque você merece mais tempo para o que ama!" />
+        <Label Margin="0,-10,0,10" Text="Comande sua rotina com facilidade—porque você merece mais tempo para o que ama!" />
 
         <component:EntryAndLabelComponent Title="Name" Placeholder="Mateus Lima" />
 
@@ -25,7 +26,7 @@
 
 
         <Button
-            Margin="0,70,0,70"
+            Margin="0,40,0,40"
             BackgroundColor="#0065f2"
             CornerRadius="20"
             HeightRequest="60"
